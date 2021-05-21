@@ -26,6 +26,10 @@ _This program allows a user to create Stylists and Clients. Stylists and Clients
 * Open terminal
 * Change directory to HairSalon.Solution/HairSalon
 * Type "dotnet build" in terminal and hit enter
+* Set up database
+```
+
+```
 * Type "dotnet run" in the terminal and hit enter
 
 ## Known Bugs
