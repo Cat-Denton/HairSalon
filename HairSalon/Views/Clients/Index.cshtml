@@ -19,5 +19,12 @@
   }
 </ul>
 
-<p>@Html.ActionLink("Add new Client", "Create")</p>
+@if(@ViewBag.StylistList.Count == 0)
+{
+  <h3>At least one stylist must be added before you can add clients!</h3>
+}
+@if(@ViewBag.StylistList.Count > 0)
+{
+  <p>@Html.ActionLink("Add new Client", "Create")</p>
+}
 <p>@Html.ActionLink("Home","Index","Home")</p>
