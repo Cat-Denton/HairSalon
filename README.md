@@ -56,7 +56,7 @@ CREATE DATABASE `cat_denton`;
 
 ## Known Bugs
 
-* none
+* Inconsistent font sizes from page to page
 
 ## License
 
