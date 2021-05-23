@@ -26,7 +26,7 @@ _This program allows a user to create Stylists and Clients. Stylists and Clients
 * Open terminal
 * Change directory to HairSalon.Solution/HairSalon
 * Type "dotnet touch appsettings.json"
-* Enter the following code into appsettings.json and save
+* Enter the following code into appsettings.json, change the password to your MySql server password and save
 ```
 {
   "ConnectionStrings": {
