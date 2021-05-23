@@ -30,7 +30,7 @@ _This program allows a user to create Stylists and Clients. Stylists and Clients
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=cat_denton;uid=root;pwd=epicodus;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=cat_denton;uid=root;pwd=[yourPwHere];"
   }
 }
 ```
