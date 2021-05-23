@@ -25,10 +25,32 @@ _This program allows a user to create Stylists and Clients. Stylists and Clients
 * Open code with a text editor
 * Open terminal
 * Change directory to HairSalon.Solution/HairSalon
-* Type "dotnet build" in terminal and hit enter
-* Set up database
+* Type "dotnet touch appsettings.json"
+* Enter the following code into appsettings.json and save
 ```
-
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=cat_denton;uid=root;pwd=epicodus;"
+  }
+}
+```
+* Type "dotnet build" in terminal and hit enter
+* Set up database in a mysql terminal
+```
+CREATE DATABASE `cat_denton`;
+    USE cat_denton;
+    CREATE TABLE `stylists` (
+        `StylistId` int(11) NOT NULL AUTO_INCREMENT,
+        `Name` varchar(255) DEFAULT NULL,
+        PRIMARY KEY (`StylistId`)
+    );
+    CREATE TABLE `clients` (
+        `clientId` int(11) NOT NULL AUTO_INCREMENT,
+        `Name` varchar(255) DEFAULT NULL,
+        `StylistId` int(11) NOT NULL DEFAULT '0',
+        `ContactInfo` varchar(255) DEFAULT NULL,
+        PRIMARY KEY (`clientId`)
+    );
 ```
 * Type "dotnet run" in the terminal and hit enter
 
